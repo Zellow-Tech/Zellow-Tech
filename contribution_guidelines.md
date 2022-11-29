@@ -24,6 +24,39 @@ You can save you sometime by running some checks locally before committing.
 * Pleaes also add any other details that you think might be absolutely necessary, and if useful, how it affects the code, to a PR.
 
 ##### Structure of PR and actions
+
+<table>
+  <thead>
+    <tr>
+      <th>Instance</th>
+      <th>Branch</th>
+      <th>Description, Instructions, Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stable</td>
+      <td>stable</td>
+      <td>Accepts merges from dev and Hotfixes</td>
+    </tr>
+    <tr>
+      <td>Working</td>
+      <td>master</td>
+      <td>Accepts merges from Features/Issues and Hotfixes</td>
+    </tr>
+    <tr>
+      <td>Features/Issues</td>
+      <td>topic-*</td>
+      <td>Always branch off HEAD of Working</td>
+    </tr>
+    <tr>
+      <td>Hotfix</td>
+      <td>hotfix-*</td>
+      <td>Always branch off Stable</td>
+    </tr>
+  </tbody>
+</table>
+
 * feat : use this when a new feature is implemented.
 * issue : use this action when you have to report an issue.
 * update : use this action when you've updated some code in the existing file.
